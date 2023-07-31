@@ -9,14 +9,10 @@ import pandas as pd
 import numpy as np
 import os
 import pdb
-# import pickle as pickle
-# import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 ### WideDeep dependency
 import torch
 import torch.nn as nn
-
-
 from pytorchtools import EarlyStopping
 from pytorch_widedeep.preprocessing import TabPreprocessor
 from torch.utils.data import Dataset, DataLoader
