@@ -234,11 +234,10 @@ class MyModel(nn.Module):
 
 
 
-# contrastive_denoising_model = torch.load("encoder_decoder_model.pt",map_location= torch.device('cpu'))
-# contrastive_denoising_model = torch.load("pretrained_weights/encoder_decoder_model.pt")
+
 contrastive_denoising_model = torch.load(os.path.join(model_path,model_name))
-pretrained_model = contrastive_denoising_model.encoder
-# pretrained_model = contrastive_denoising_model.model
+#pretrained_model = contrastive_denoising_model.encoder
+pretrained_model = contrastive_denoising_model.model
 print(pretrained_model)
 
 
